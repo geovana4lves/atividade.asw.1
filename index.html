@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha Seu Animal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:white;">Crie seu Animal</h1>
+        <form id="animalForm">
+            <div class="step" id="step1">
+                <label for="animalType">Escolha um animal:</label>
+                <select id="animalType">
+                    <option value="Cachorro">Cachorro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Passaro">Pássaro</option>
+                    <option value="Peixe">Peixe</option>
+                    <option value="Cavalo">Cavalo</option>
+                </select>
+                <button type="button" id="next1">Próximo</button>
+            </div>
+
+            <div class="step" id="step2" style="display:none;">
+                <label for="animalName">Nome do Animal:</label>
+                <input type="text" id="animalName" required>
+                
+                <label for="animalColor">Escolha a cor:</label>
+                <input type="color" id="animalColor">
+                
+                <button type="button" id="back1">Voltar</button>
+                <button type="button" id="next2">Próximo</button>
+            </div>
+
+            <div class="step" id="step3" style="display:none;">
+                <button type="button" id="createAnimal">Criar Animal</button>
+            </div>
+        </form>
+
+        <div id="animalDisplay" style="display:none;">
+            <h2>Seu Animal</h2>
+            <p id="animalInfo"></p>
+            <button id="playSound">Ouvir Som</button>
+            <button id="showMovement">Ver Movimento</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

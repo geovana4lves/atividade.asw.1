@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: hotpink;
+    padding: 20px;
+}
+
+.container {
+    background: pink;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.step {
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 15px;
+    background: palevioletred;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: plum;
+}
